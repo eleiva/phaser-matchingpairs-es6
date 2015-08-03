@@ -5,6 +5,10 @@ Phaser matching pairs example ported to gulp and es6
 
 `npm install`
 
+`gulp build`
+
+Done!
+
 ## License
 
 This project is released under the MIT License.
