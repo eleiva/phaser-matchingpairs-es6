@@ -1,5 +1,3 @@
-import RainbowText from '../objects/RainbowText';
-
 class GameState extends Phaser.State {
 
   constructor(){
@@ -108,7 +106,7 @@ class GameState extends Phaser.State {
     this.currentTile = this.map.getTile(this.layer.getTileX(this.marker.x), this.layer.getTileY(this.marker.y));
     this.currentTilePosition = ((this.layer.getTileY(this.input.activePointer.worldY)+1)*6)-(6-(this.layer.getTileX(this.input.activePointer.worldX)+1));
 
-    if (this.input.mousePointer.isDown) {
+    if (this.input.activePointer.isDown) {
         // check to make sure the tile is not already flipped
         if (this.currentTile.index == this.tileBack) {
             // get the corresponding item out of squareList
